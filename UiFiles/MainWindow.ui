@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1107</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Personal Movie Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="tabShape">
+          <enum>QTabWidget::Rounded</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="Movies">
+          <attribute name="title">
+           <string>Movies</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="6" column="7">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Rated</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="6">
+            <widget class="QLineEdit" name="year"/>
+           </item>
+           <item row="2" column="5">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Title</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Director</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="searchText"/>
+             </item>
+             <item>
+              <widget class="QComboBox" name="searchCategory"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="search">
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/Icons/1404682038_27877.ico</normaloff>:/Icons/1404682038_27877.ico</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="3" rowspan="10">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>523</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="7" column="5">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Year</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6" colspan="3">
+            <widget class="QLineEdit" name="director"/>
+           </item>
+           <item row="2" column="4" rowspan="9">
+            <widget class="QLabel" name="poster">
+             <property name="minimumSize">
+              <size>
+               <width>320</width>
+               <height>476</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>320</width>
+               <height>476</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="text">
+              <string>Poster Not Available</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="7">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Genre</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="5">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Run Time</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="5">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Plot</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="6" colspan="3">
+            <widget class="QTextEdit" name="plot"/>
+           </item>
+           <item row="11" column="1">
+            <widget class="QPushButton" name="addFolder">
+             <property name="text">
+              <string>Add Folder</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Icons/icons.qrc">
+               <normaloff>:/Icons/1404683777_27849.ico</normaloff>:/Icons/1404683777_27849.ico</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="6">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPushButton" name="save">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/Icons/1404682264_27876.ico</normaloff>:/Icons/1404682264_27876.ico</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="play">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/Icons/1404682048_27865.ico</normaloff>:/Icons/1404682048_27865.ico</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="info">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../Icons/icons.qrc">
+                 <normaloff>:/Icons/1404682274_27854.ico</normaloff>:/Icons/1404682274_27854.ico</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="9" column="5">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>IMDB</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QPushButton" name="addMovie">
+             <property name="text">
+              <string>Add Movie</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Icons/icons.qrc">
+               <normaloff>:/Icons/1404682250_27831.ico</normaloff>:/Icons/1404682250_27831.ico</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="2">
+            <widget class="QPushButton" name="remove">
+             <property name="text">
+              <string>Delete</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../Icons/icons.qrc">
+               <normaloff>:/Icons/1404682064_27842.ico</normaloff>:/Icons/1404682064_27842.ico</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="8">
+            <widget class="QLineEdit" name="genre"/>
+           </item>
+           <item row="4" column="5">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Cast</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="8">
+            <widget class="QLineEdit" name="rated"/>
+           </item>
+           <item row="2" column="6" colspan="3">
+            <widget class="QLineEdit" name="title"/>
+           </item>
+           <item row="6" column="6">
+            <widget class="QLineEdit" name="runtime"/>
+           </item>
+           <item row="8" column="5">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Awards</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="6">
+            <widget class="QLineEdit" name="imdb"/>
+           </item>
+           <item row="9" column="7">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Tomato</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="8">
+            <widget class="QLineEdit" name="tomato"/>
+           </item>
+           <item row="8" column="6" colspan="3">
+            <widget class="QLineEdit" name="awards"/>
+           </item>
+           <item row="4" column="6" colspan="3">
+            <widget class="QTextEdit" name="cast">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="6" colspan="3">
+            <widget class="QTextEdit" name="writers">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="5">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Writers</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" rowspan="8" colspan="3">
+            <widget class="QListWidget" name="listWidget">
+             <property name="font">
+              <font>
+               <family>Sans Serif</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../Icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

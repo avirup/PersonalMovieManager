@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Personal Movie Manager</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="4" column="6" rowspan="4" colspan="4">
+     <widget class="QLabel" name="poster">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>438</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5" colspan="5">
+     <widget class="QLineEdit" name="actors"/>
+    </item>
+    <item row="1" column="7">
+     <widget class="QLineEdit" name="rated"/>
+    </item>
+    <item row="5" column="4">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>Writers</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Actors</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QLineEdit" name="genre"/>
+    </item>
+    <item row="1" column="8">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Rating</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" rowspan="11">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLineEdit" name="directors"/>
+    </item>
+    <item row="6" column="4">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>Awards</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLineEdit" name="year"/>
+    </item>
+    <item row="6" column="5">
+     <widget class="QLineEdit" name="awards"/>
+    </item>
+    <item row="1" column="9">
+     <widget class="QProgressBar" name="rating">
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Title</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Rated</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLineEdit" name="imdb"/>
+    </item>
+    <item row="7" column="4">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>Plot</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>Directors</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Run Time</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Year</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5" colspan="5">
+     <widget class="QLineEdit" name="title"/>
+    </item>
+    <item row="2" column="9">
+     <widget class="QLineEdit" name="runtime"/>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>IMDB</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLineEdit" name="writers"/>
+    </item>
+    <item row="2" column="6">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Genre</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLineEdit" name="search"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QPushButton" name="addMovie">
+      <property name="text">
+       <string>Add Movie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QPushButton" name="addFolder">
+      <property name="text">
+       <string>Add Folder</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="remove">
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5" rowspan="4">
+     <widget class="QPlainTextEdit" name="plot"/>
+    </item>
+    <item row="1" column="0" rowspan="8" colspan="2">
+     <widget class="QListWidget" name="MovieList"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
