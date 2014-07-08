@@ -2,7 +2,7 @@
 
 from PyQt4 import QtCore, QtGui
 import UiFiles.Ui_MainWindow
-from Scripts import GetListOfVideos, GetDataFromWeb, AddToDatabase, DatabaseOperations
+from Scripts import GetListOfVideos, GetDataFromWeb, DatabaseOperations
 import sys, os
 
 class pmm(QtGui.QMainWindow):
