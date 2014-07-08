@@ -54,6 +54,10 @@ def ArrangeData(data):
             poster = os.path.join(os.getcwd(), 'Posters', poster.split('/')[-1]) #Set poster to link to local file
         except(ValueError):
             poster = 'Poster Not Available'
+        except(FileNotFoundError):
+            os.mkdir(os.path.join(os.getcwd(), 'Posters'))
+            urllib.request.urlretrieve(poster, os.path.join(os.getcwd(), 'Posters', poster.split('/')[-1])) #Download poster
+            poster = os.path.join(os.getcwd(), 'Posters', poster.split('/')[-1]) #Set poster to link to local file
             
         
         title = title +' ('+ year + ')'
