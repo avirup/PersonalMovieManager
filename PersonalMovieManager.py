@@ -3,7 +3,7 @@
 from PyQt4 import QtCore, QtGui
 import UiFiles.Ui_MainWindow
 from Scripts import GetListOfVideos, GetDataFromWeb, DatabaseOperations
-import sys, os
+import sys, os, subprocess
 
 class pmm(QtGui.QMainWindow):
     def __init__(self, parent = None):
@@ -48,8 +48,6 @@ class pmm(QtGui.QMainWindow):
                 self.ui.poster.setPixmap(QtGui.QPixmap(self.values[13]))
             else:
                 self.ui.poster.setText('Poster Not Available')
-            
-            self.currentMovieName = self.values[1]
         
         except(TypeError):
             self.ui.title.setText('')
@@ -66,8 +64,6 @@ class pmm(QtGui.QMainWindow):
             self.ui.plot.setText('')
             self.ui.poster.setText('Poster Not Available')
             
-            self.currentMovieName = ''
-            
     def play(self):
         try:
             DatabaseOperations.PlayMovie(self.ui.listWidget.currentItem().text())
@@ -76,9 +72,14 @@ class pmm(QtGui.QMainWindow):
             pass
     
     def save(self):
-        
-    def info(self):
         pass
+    
+    def info(self):
+        if sys.platform == "win32":
+            os.startfile('README.md')
+        else:
+            opener ="open" if sys.platform == "darwin" else "xdg-open"
+            subprocess.call([opener, 'README.md'])
         
     def remove(self):
         try:
