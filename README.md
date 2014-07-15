@@ -10,5 +10,7 @@ notably search and manually updating information.
 The add movie, delete movie and play movie options work.
 
 Attribution
+
 Icons from https://www.iconfinder.com/iconsets/musthave
+
 Platform Independent File Opening from http://stackoverflow.com/questions/17317219/is-there-an-platform-independent-equivalent-of-os-startfile
