@@ -66,6 +66,9 @@ def ArrangeData(data):
     
     except(KeyError):
         pass
+        
+def UpdateDatabase(CurrentTitle):
+    
     
 def LoadList():
     if os.path.isfile('database.db'):

@@ -15,6 +15,7 @@ class pmm(QtGui.QMainWindow):
         self.connect(self.ui.addMovie, QtCore.SIGNAL("clicked()"), self.addMovie)
         self.connect(self.ui.remove, QtCore.SIGNAL("clicked()"), self.remove)
         self.connect(self.ui.play, QtCore.SIGNAL("clicked()"), self.play)
+        self.connect(self.ui.save, QtCore.SIGNAL("clicked()"), self.save)
         self.connect(self.ui.info, QtCore.SIGNAL("clicked()"), self.info)
         self.connect(self.ui.listWidget, QtCore.SIGNAL("itemSelectionChanged()"), self.updateDisplay)
         
@@ -47,6 +48,8 @@ class pmm(QtGui.QMainWindow):
                 self.ui.poster.setPixmap(QtGui.QPixmap(self.values[13]))
             else:
                 self.ui.poster.setText('Poster Not Available')
+            
+            self.currentMovieName = self.values[1]
         
         except(TypeError):
             self.ui.title.setText('')
@@ -63,6 +66,8 @@ class pmm(QtGui.QMainWindow):
             self.ui.plot.setText('')
             self.ui.poster.setText('Poster Not Available')
             
+            self.currentMovieName = ''
+            
     def play(self):
         try:
             DatabaseOperations.PlayMovie(self.ui.listWidget.currentItem().text())
@@ -70,6 +75,8 @@ class pmm(QtGui.QMainWindow):
         except(AttributeError):
             pass
     
+    def save(self):
+        
     def info(self):
         pass
         

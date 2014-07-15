@@ -41,7 +41,4 @@ def GetData(ListOfMovies):
      
     except(AttributeError):
        pass
-    
-    except(socket.gaierror):
-        
             
